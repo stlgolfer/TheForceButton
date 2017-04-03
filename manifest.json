@@ -6,8 +6,11 @@
 
 	// Recommended
 	// "default_locale": "en",
-	"description": "Appends -f to the a page",
-	"icons": {},
+	"description": "Appends -f to the page",
+	"icons": {
+		"16":"images/icon48.png",
+		"128": "images/icon128.png"
+	},
 	"permissions": ["activeTab"],
 
 	// Pick one (or none)
