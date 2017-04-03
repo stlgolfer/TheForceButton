@@ -8,10 +8,19 @@
 	// "default_locale": "en",
 	"description": "Appends -f to the a page",
 	"icons": {},
+	"permissions": ["activeTab"],
 
 	// Pick one (or none)
 	"browser_action": {
 		"default_popup": "popup.html",
 		"default_title": "The Force Button"
-	}
+	},
+	
+	"content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "css": [],
+      "js": ["text.js"]
+    }
+  ]
 }
